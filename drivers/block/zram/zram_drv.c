@@ -3395,6 +3395,14 @@ static void zram_reset_device(struct zram *zram)
 	up_write(&zram->init_lock);
 }
 
+#ifdef CONFIG_ZRAM_SIZE_AUTO
+/* Only apply auto-sizing once on first boot */
+static bool zram_auto_size_applied;
+#elif defined(CONFIG_ZRAM_SIZE_OVERRIDE)
+/* Only apply size override once on first boot */
+static bool zram_size_override_applied;
+#endif
+
 static ssize_t disksize_store(struct device *dev,
 		struct device_attribute *attr, const char *buf, size_t len)
 {
@@ -3414,7 +3422,56 @@ static ssize_t disksize_store(struct device *dev,
 		goto out_unlock;
 	}
 
-	disksize = PAGE_ALIGN(disksize);
+#ifdef CONFIG_ZRAM_SIZE_AUTO
+		/*
+		 * Dynamic ZRAM size detection:
+		 * totalram_pages() returns usable pages.
+		 *
+		 * Use fixed sizes for known RAM variants and fall back to
+		 * rounded 50% sizing for anything unexpected.
+		 */
+	if (!zram_auto_size_applied) {
+		unsigned long total_ram_mb =
+			totalram_pages() * (PAGE_SIZE / 1024) / 1024;
+		u64 rounded_half_gb;
+
+		if (total_ram_mb > 14000) {
+			disksize = 8ULL * SZ_1G;
+			pr_info("Detected 16GB RAM variant (usable: %lu MB), setting ZRAM to 8GB (50%%)",
+				total_ram_mb);
+		} else if (total_ram_mb > 10000) {
+			disksize = 6ULL * SZ_1G;
+			pr_info("Detected 12GB RAM variant (usable: %lu MB), setting ZRAM to 6GB (50%%)",
+				total_ram_mb);
+		} else if (total_ram_mb > 6200) {
+			disksize = 4ULL * SZ_1G;
+			pr_info("Detected 8GB RAM variant (usable: %lu MB), setting ZRAM to 4GB (50%%)",
+				total_ram_mb);
+		} else if (total_ram_mb > 4200) {
+			disksize = 4ULL * SZ_1G;
+			pr_info("Detected 6GB RAM variant (usable: %lu MB), setting ZRAM to 4GB (50%%)",
+				total_ram_mb);
+		} else {
+			rounded_half_gb = DIV_ROUND_CLOSEST_ULL((u64)total_ram_mb, 2048);
+			if (!rounded_half_gb)
+				rounded_half_gb = 1;
+			disksize = rounded_half_gb * SZ_1G;
+			pr_info("Detected unknown RAM variant (usable: %lu MB), setting ZRAM to %lluGB (~50%% rounded)",
+				total_ram_mb, rounded_half_gb);
+		}
+		zram_auto_size_applied = true;
+	}
+#elif defined(CONFIG_ZRAM_SIZE_OVERRIDE)
+	/*
+	 * Only apply size override on first boot. After that, users
+	 * can freely resize ZRAM via sysfs or kernel modules.
+	 */
+	if (!zram_size_override_applied) {
+		disksize = (u64)SZ_1 * CONFIG_ZRAM_SIZE_OVERRIDE;
+		pr_info("Overriding zram size to %llu", disksize);
+		zram_size_override_applied = true;
+	}
+#endif
 	if (!zram_meta_alloc(zram, disksize)) {
 		err = -ENOMEM;
 		goto out_unlock;
@@ -3430,6 +3487,8 @@ static ssize_t disksize_store(struct device *dev,
 
 	if (!strncmp(zram->compressor, "lzo-rle", 7))
 		is_lzorle = true;
+	else
+		is_lzorle = false;
 
 	zram->comp = comp;
 	zram->disksize = disksize;
