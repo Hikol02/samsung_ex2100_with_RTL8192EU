@@ -1,0 +1,1 @@
+cmd_drivers/battery/fuelgauge/max77705_fuelgauge/built-in.a := echo >/dev/null; rm -f drivers/battery/fuelgauge/max77705_fuelgauge/built-in.a; llvm-ar cDPrST drivers/battery/fuelgauge/max77705_fuelgauge/built-in.a 

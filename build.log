@@ -1,0 +1,630 @@
+[*] Генерируем конфиг для p3s (KSU + SuSFS + Wi-Fi)...
+  GEN     Makefile
+arch/arm64/configs/exynos2100_defconfig:1287:warning: override: reassigning to symbol NET_SCH_FQ
+arch/arm64/configs/exynos2100_defconfig:6219:warning: symbol value 'm' invalid for SEC_DUMP_SINK
+#
+# configuration written to .config
+#
+  GEN     Makefile
+Using .config as base
+Merging ../arch/arm64/configs/p3s.config
+Value of CONFIG_MODEL_P3S is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_MODEL_P3S is not set
+New value: CONFIG_MODEL_P3S=y
+
+Value of CONFIG_BCM4389 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_BCM4389 is not set
+New value: CONFIG_BCM4389=m
+
+Value of CONFIG_WLAN_VENDOR_REALTEK is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_WLAN_VENDOR_REALTEK is not set
+New value: CONFIG_WLAN_VENDOR_REALTEK=y
+
+Value of CONFIG_MFD_S2MPB02 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_MFD_S2MPB02 is not set
+New value: CONFIG_MFD_S2MPB02=m
+
+Value of CONFIG_REGULATOR_S2DOS05 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_REGULATOR_S2DOS05 is not set
+New value: CONFIG_REGULATOR_S2DOS05=m
+
+Value of CONFIG_CHARGER_PCA9468 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_CHARGER_PCA9468 is not set
+New value: CONFIG_CHARGER_PCA9468=m
+
+Value of CONFIG_CAMERA_USU_V03 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_CAMERA_USU_V03 is not set
+New value: CONFIG_CAMERA_USU_V03=y
+
+Value of CONFIG_CAMERA_CIS_3J1_OBJ is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_CAMERA_CIS_3J1_OBJ is not set
+New value: CONFIG_CAMERA_CIS_3J1_OBJ=m
+
+Value of CONFIG_CAMERA_CIS_GH1_OBJ is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_CAMERA_CIS_GH1_OBJ is not set
+New value: CONFIG_CAMERA_CIS_GH1_OBJ=m
+
+Value of CONFIG_CAMERA_CIS_HM1_OBJ is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_CAMERA_CIS_HM1_OBJ is not set
+New value: CONFIG_CAMERA_CIS_HM1_OBJ=m
+
+Value of CONFIG_CAMERA_CIS_HM3_OBJ is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_CAMERA_CIS_HM3_OBJ is not set
+New value: CONFIG_CAMERA_CIS_HM3_OBJ=m
+
+Value of CONFIG_CAMERA_CIS_IMX563_OBJ is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_CAMERA_CIS_IMX563_OBJ is not set
+New value: CONFIG_CAMERA_CIS_IMX563_OBJ=m
+
+Value of CONFIG_EXYNOS_DECON_LCD_COPR is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_EXYNOS_DECON_LCD_COPR is not set
+New value: CONFIG_EXYNOS_DECON_LCD_COPR=y
+
+Value of CONFIG_SUPPORT_HMD is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SUPPORT_HMD is not set
+New value: CONFIG_SUPPORT_HMD=y
+
+Value of CONFIG_EXTEND_LIVE_CLOCK is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_EXTEND_LIVE_CLOCK is not set
+New value: CONFIG_EXTEND_LIVE_CLOCK=y
+
+Value of CONFIG_SUPPORT_DISPLAY_PROFILER is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SUPPORT_DISPLAY_PROFILER is not set
+New value: CONFIG_SUPPORT_DISPLAY_PROFILER=y
+
+Value of CONFIG_SUPPORT_MAFPC is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SUPPORT_MAFPC is not set
+New value: CONFIG_SUPPORT_MAFPC=y
+
+Value of CONFIG_SUPPORT_BRIGHTDOT_TEST is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SUPPORT_BRIGHTDOT_TEST is not set
+New value: CONFIG_SUPPORT_BRIGHTDOT_TEST=y
+
+Value of CONFIG_EXYNOS_DECON_LCD_S6E3HAB is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_EXYNOS_DECON_LCD_S6E3HAB is not set
+New value: CONFIG_EXYNOS_DECON_LCD_S6E3HAB=m
+
+Value of CONFIG_EXYNOS_DECON_LCD_S6E3HAD is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_EXYNOS_DECON_LCD_S6E3HAD is not set
+New value: CONFIG_EXYNOS_DECON_LCD_S6E3HAD=m
+
+Value of CONFIG_USE_LLC_LOG is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: CONFIG_USE_LLC_LOG=m
+New value: CONFIG_USE_LLC_LOG=m
+
+Value of CONFIG_USE_PPC_LOG is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: CONFIG_USE_PPC_LOG=m
+New value: CONFIG_USE_PPC_LOG=m
+
+Value of CONFIG_DEBUG_SNAPSHOT_LOG_ITEM_SIZE is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: CONFIG_DEBUG_SNAPSHOT_LOG_ITEM_SIZE=1024
+New value: CONFIG_DEBUG_SNAPSHOT_LOG_ITEM_SIZE=1024
+
+Value of CONFIG_SENSORS is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SENSORS is not set
+New value: CONFIG_SENSORS=y
+
+Value of CONFIG_SENSORS_SX9364 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SENSORS_SX9364 is not set
+New value: CONFIG_SENSORS_SX9364=m
+
+Value of CONFIG_SENSORS_QBT2000 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SENSORS_QBT2000 is not set
+New value: CONFIG_SENSORS_QBT2000=m
+
+Value of CONFIG_SENSORS_VL53L5 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SENSORS_VL53L5 is not set
+New value: CONFIG_SENSORS_VL53L5=m
+
+Value of CONFIG_SENSORS_VL53L5_SUPPORT_UAPI is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SENSORS_VL53L5_SUPPORT_UAPI is not set
+New value: CONFIG_SENSORS_VL53L5_SUPPORT_UAPI=y
+
+Value of CONFIG_SENSORS_VL53L5_SUPPORT_KERNEL_INTERFACE is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SENSORS_VL53L5_SUPPORT_KERNEL_INTERFACE is not set
+New value: CONFIG_SENSORS_VL53L5_SUPPORT_KERNEL_INTERFACE=y
+
+Value of CONFIG_SENSORS_VL53L5_SLSI is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SENSORS_VL53L5_SLSI is not set
+New value: CONFIG_SENSORS_VL53L5_SLSI=y
+
+Value of CONFIG_SENSORS_SSP_UNBOUND is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SENSORS_SSP_UNBOUND is not set
+New value: CONFIG_SENSORS_SSP_UNBOUND=y
+
+Value of CONFIG_SENSORS_TSL2510 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SENSORS_TSL2510 is not set
+New value: CONFIG_SENSORS_TSL2510=m
+
+Value of CONFIG_MOTOR_CS40L2X is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_MOTOR_CS40L2X is not set
+New value: CONFIG_MOTOR_CS40L2X=m
+
+Value of CONFIG_TOUCHSCREEN_SLSI is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_TOUCHSCREEN_SLSI is not set
+New value: CONFIG_TOUCHSCREEN_SLSI=m
+
+Value of CONFIG_SAMSUNG_UWB is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SAMSUNG_UWB is not set
+New value: CONFIG_SAMSUNG_UWB=m
+
+Value of CONFIG_UWB_SR100 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_UWB_SR100 is not set
+New value: CONFIG_UWB_SR100=y
+
+Value of CONFIG_SEC_UWB_LOGGER is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_SEC_UWB_LOGGER is not set
+New value: CONFIG_SEC_UWB_LOGGER=y
+
+Value of CONFIG_TX_GEAR_AOV is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_TX_GEAR_AOV is not set
+New value: CONFIG_TX_GEAR_AOV=y
+
+Value of CONFIG_EPEN_WACOM_WEZ01 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_EPEN_WACOM_WEZ01 is not set
+New value: CONFIG_EPEN_WACOM_WEZ01=m
+
+Value of CONFIG_PD_CHARGER_HV_DISABLE is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_PD_CHARGER_HV_DISABLE is not set
+New value: CONFIG_PD_CHARGER_HV_DISABLE=y
+
+Value of CONFIG_EROFS_FS_PCPU_KTHREAD is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_EROFS_FS_PCPU_KTHREAD is not set
+New value: CONFIG_EROFS_FS_PCPU_KTHREAD=y
+
+Value of CONFIG_CFG80211 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: CONFIG_CFG80211=y
+New value: CONFIG_CFG80211=y CONFIG_CFG80211=y
+
+Value of CONFIG_MAC80211 is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: CONFIG_MAC80211=y
+New value: CONFIG_MAC80211=y CONFIG_MAC80211=y
+
+Value of CONFIG_EXTRA_FIRMWARE is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: CONFIG_EXTRA_FIRMWARE=""
+New value: CONFIG_EXTRA_FIRMWARE="mediatek/mt7610u.bin" CONFIG_EXTRA_FIRMWARE="mediatek/mt7610u.bin"
+
+Value of CONFIG_WLAN_VENDOR_MEDIATEK is redefined by fragment ../arch/arm64/configs/p3s.config:
+Previous value: # CONFIG_WLAN_VENDOR_MEDIATEK is not set
+New value: CONFIG_WLAN_VENDOR_MEDIATEK=y
+
+#
+# merged configuration written to .config (needs make)
+#
+  GEN     Makefile
+scripts/kconfig/conf  --olddefconfig Kconfig
+.config:7501:warning: override: reassigning to symbol RBIN
+.config:7503:warning: override: reassigning to symbol SEC_NFC_LOGGER_ADD_ACPM_LOG
+.config:7505:warning: override: reassigning to symbol USB_NET_AQC111
+.config:7506:warning: override: reassigning to symbol BCM4375
+.config:7517:warning: override: reassigning to symbol CHARGER_SM5451
+.config:7519:warning: override: reassigning to symbol CAMERA_OTPROM_SUPPORT_REAR
+.config:7520:warning: override: reassigning to symbol FLASH_CURRENT_CHANGE_SUPPORT
+.config:7521:warning: override: reassigning to symbol CAMERA_USU_V01
+.config:7522:warning: override: reassigning to symbol CAMERA_USU_V02
+.config:7524:warning: override: reassigning to symbol CAMERA_RSU_V09
+.config:7527:warning: override: reassigning to symbol CAMERA_CIS_GW2_OBJ
+.config:7528:warning: override: reassigning to symbol CAMERA_CIS_HI847_OBJ
+.config:7529:warning: override: reassigning to symbol CAMERA_CIS_2LD_OBJ
+.config:7532:warning: override: reassigning to symbol CAMERA_CIS_IMX258_OBJ
+.config:7534:warning: override: reassigning to symbol CAMERA_CIS_IMX616_OBJ
+.config:7535:warning: override: reassigning to symbol CAMERA_CIS_HI1336_OBJ
+.config:7538:warning: override: reassigning to symbol CAMERA_FLASH_KTD2692_OBJ
+.config:7544:warning: override: reassigning to symbol SUPPORT_DDI_FLASH
+.config:7545:warning: override: reassigning to symbol SUPPORT_POC_FLASH
+.config:7547:warning: override: reassigning to symbol SUPPORT_POC_SPI
+.config:7548:warning: override: reassigning to symbol SUPPORT_GM2_FLASH
+.config:7549:warning: override: reassigning to symbol SUPPORT_MASK_LAYER
+.config:7551:warning: override: reassigning to symbol EVASION_DISP_DET
+.config:7552:warning: override: reassigning to symbol SUPPORT_TIG
+.config:7553:warning: override: reassigning to symbol EXYNOS_DECON_LCD_S6E3FAB
+.config:7556:warning: override: reassigning to symbol EXYNOS_DECON_LCD_EA8082
+.config:7557:warning: override: reassigning to symbol EXYNOS_DECON_LCD_S6E3FC3
+.config:7559:warning: override: reassigning to symbol LEDS_KTD2692
+.config:7568:warning: override: reassigning to symbol SENSORS_ISG5320A
+.config:7569:warning: override: reassigning to symbol SENSORS_ISG5320A_O1S
+.config:7570:warning: override: reassigning to symbol SENSORS_FINGERPRINT_NORMALSPI
+.config:7572:warning: override: reassigning to symbol SENSORS_GW9558X
+.config:7579:warning: override: reassigning to symbol SENSORS_SUPPORT_SLSI
+.config:7580:warning: override: reassigning to symbol SENSORS_FLICKER_SELF_TEST
+.config:7581:warning: override: reassigning to symbol SENSORS_STK3A8X
+.config:7582:warning: override: reassigning to symbol SENSORS_FLIP_COVER_DETECTOR
+.config:7583:warning: override: reassigning to symbol SENSORS_SSP_R9S
+.config:7584:warning: override: reassigning to symbol HALL_NOTIFIER
+.config:7585:warning: override: reassigning to symbol HALL_LOGICAL
+.config:7586:warning: override: reassigning to symbol PWM_CONFIG
+.config:7590:warning: override: reassigning to symbol MAX77705_VIBRATOR
+.config:7608:warning: override: reassigning to symbol SECTION_MISMATCH_WARN_ONLY
+.config:7621:warning: override: reassigning to symbol CFG80211
+.config:7622:warning: override: reassigning to symbol MAC80211
+.config:7623:warning: override: reassigning to symbol MT76_CORE
+.config:7624:warning: override: reassigning to symbol MT76_USB
+.config:7625:warning: override: reassigning to symbol MT76x02_LIB
+.config:7626:warning: override: reassigning to symbol MT76x02_USB
+.config:7627:warning: override: reassigning to symbol MT76x0_COMMON
+.config:7628:warning: override: reassigning to symbol MT76x0U
+.config:7629:warning: override: reassigning to symbol RTL8192EU
+.config:7630:warning: override: reassigning to symbol EXTRA_FIRMWARE
+.config:7631:warning: override: reassigning to symbol EXTRA_FIRMWARE_DIR
+.config:7634:warning: override: reassigning to symbol MT76_CORE
+.config:7635:warning: override: reassigning to symbol MT76_USB
+.config:7636:warning: override: reassigning to symbol MT76x02_LIB
+.config:7637:warning: override: reassigning to symbol MT76x02_USB
+.config:7638:warning: override: reassigning to symbol MT76x0_COMMON
+.config:7639:warning: override: reassigning to symbol MT76x0U
+#
+# configuration written to .config
+#
+  GEN     Makefile
+Using .config as base
+Merging ../arch/arm64/configs/ksu.config
+#
+# merged configuration written to .config (needs make)
+#
+  GEN     Makefile
+scripts/kconfig/conf  --olddefconfig Kconfig
+#
+# configuration written to .config
+#
+  GEN     Makefile
+Using .config as base
+Merging ../arch/arm64/configs/susfs.config
+#
+# merged configuration written to .config (needs make)
+#
+  GEN     Makefile
+scripts/kconfig/conf  --olddefconfig Kconfig
+#
+# configuration written to .config
+#
+[*] Запускаем компиляцию ядра (16 потоков)...
+  GEN     Makefile
+scripts/kconfig/conf  --syncconfig Kconfig
+  GEN     Makefile
+  CALL    ../scripts/atomic/check-atomics.sh
+  CALL    ../scripts/checksyscalls.sh
+../drivers/sensors/vl53l5/Makefile:61: LOG_ENABLE=TRUE
+../drivers/sensors/vl53l5/Makefile:90: BUILD_TYPE=RELEASE
+../drivers/sensors/vl53l5/Makefile:94: LOG_ENABLE=TRUE
+../drivers/sensors/vl53l5/Makefile:106: PSEUDO_SINGLE_ZONE=TRUE
+  CHK     include/generated/compile.h
+  CHK     kernel/kheaders_data.tar.xz
+  CC      drivers/net/wireless/mediatek/mt76/mmio.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x0/usb.o
+  CC      drivers/net/wireless/mediatek/mt76/util.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x0/usb_mcu.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x0/init.o
+  CC      drivers/net/wireless/mediatek/mt76/trace.o
+  CC      drivers/net/wireless/mediatek/mt76/dma.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x0/main.o
+  CC      drivers/net/wireless/mediatek/mt76/mac80211.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x0/eeprom.o
+  CC      drivers/net/wireless/mediatek/mt76/debugfs.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x0/phy.o
+  CC      drivers/net/wireless/mediatek/mt76/eeprom.o
+  CC      drivers/net/wireless/mediatek/mt76/tx.o
+  CC      drivers/net/wireless/mediatek/mt76/agg-rx.o
+  CC      drivers/net/wireless/mediatek/mt76/mcu.o
+  CC      drivers/net/wireless/mediatek/mt76/pci.o
+  CC      drivers/net/wireless/mediatek/mt76/usb.o
+  CC      drivers/net/wireless/mediatek/mt76/usb_trace.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_util.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_mac.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_mcu.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_eeprom.o
+  GEN     kernel/kheaders_data.tar.xz
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_phy.o
+../drivers/sensors/vl53l5/Makefile:61: LOG_ENABLE=TRUE
+../drivers/sensors/vl53l5/Makefile:90: BUILD_TYPE=RELEASE
+../drivers/sensors/vl53l5/Makefile:94: LOG_ENABLE=TRUE
+../drivers/sensors/vl53l5/Makefile:106: PSEUDO_SINGLE_ZONE=TRUE
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_mmio.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_txrx.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_trace.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_debugfs.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_dfs.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_beacon.o
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_usb_mcu.o
+  AR      drivers/net/wireless/mediatek/mt76/mt76x0/built-in.a
+  CC      drivers/net/wireless/mediatek/mt76/mt76x02_usb_core.o
+  AR      drivers/net/wireless/mediatek/mt76/built-in.a
+  AR      drivers/net/wireless/mediatek/built-in.a
+  AR      drivers/net/wireless/built-in.a
+  AR      drivers/net/built-in.a
+  AR      drivers/built-in.a
+  CC      kernel/kheaders.o
+  AR      kernel/built-in.a
+  CHK     include/generated/autoksyms.h
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  AR      init/built-in.a
+  LTO     vmlinux.o
+  MODPOST vmlinux.o
+  MODINFO modules.builtin.modinfo
+  LD      .tmp_vmlinux.kallsyms1
+  KSYM    .tmp_vmlinux.kallsyms1.o
+  LD      .tmp_vmlinux.kallsyms2
+  KSYM    .tmp_vmlinux.kallsyms2.o
+  LD      vmlinux
+  SORTEX  vmlinux
+  SYSMAP  System.map
+  LTO [M] block/blk-sec-stats.lto.o
+  OBJCOPY arch/arm64/boot/Image
+  LTO [M] block/ssg.lto.o
+  LTO [M] drivers/battery/charger/max77705_charger/max77705-charger.lto.o
+  LTO [M] drivers/battery/charger/pca9468_charger/pca9468-charger.lto.o
+  LTO [M] drivers/battery/common/sec-battery.lto.o
+  LTO [M] drivers/battery/common/sec-direct-charger.lto.o
+  LTO [M] drivers/battery/common/sec_pd.lto.o
+  LTO [M] drivers/battery/core/sb-core.lto.o
+  LTO [M] drivers/battery/fuelgauge/max77705_fuelgauge/max77705-fuelgauge.lto.o
+  LTO [M] drivers/battery/wireless/mfc_charger.lto.o
+  LTO [M] drivers/bluetooth/bcm43xx.lto.o
+  LTO [M] drivers/bts/exynos-bts.lto.o
+  LTO [M] drivers/bts/exynos-btsops2100.lto.o
+  GZIP    arch/arm64/boot/Image.gz
+  LTO [M] drivers/char/hw_random/exyswd-rng.lto.o
+  LTO [M] drivers/clk/samsung/clk-exynos-audss.lto.o
+  LTO [M] drivers/clk/samsung/clk_exynos.lto.o
+  LTO [M] drivers/clocksource/exynos_mct.lto.o
+  LTO [M] drivers/cpufreq/exynos-acme.lto.o
+  LTO [M] drivers/cpufreq/exynos-dsufreq.lto.o
+  LTO [M] drivers/cpufreq/freq-qos-tracer.lto.o
+  LTO [M] drivers/crypto/fmp/fmp-core.lto.o
+  LTO [M] drivers/devfreq/exynos/exynos_devfreq.lto.o
+  LTO [M] drivers/dma-buf/dma-buf-container.lto.o
+  LTO [M] drivers/dma/pl330.lto.o
+  LTO [M] drivers/dma/samsung-dma.lto.o
+  LTO [M] drivers/fingerprint/fingerprint.lto.o
+  LTO [M] drivers/fingerprint/fingerprint_sysfs.lto.o
+  LTO [M] drivers/fingerprint/qbt2000_spidev.lto.o
+  LTO [M] drivers/gpu/arm/v_r38p1/mali_kbase.lto.o
+  LTO [M] drivers/i2c/busses/acpm-mfd-bus.lto.o
+  LTO [M] drivers/i2c/busses/i2c-exynos5.lto.o
+  LTO [M] drivers/i2c/i2c-dev.lto.o
+  LTO [M] drivers/iio/adc/s2mps23_adc.lto.o
+  LTO [M] drivers/input/input_boost/input_booster_lkm.lto.o
+  LTO [M] drivers/input/keyboard/s2mps23-key.lto.o
+  LTO [M] drivers/input/misc/hall/hall_ic.lto.o
+  LTO [M] drivers/input/sec_input/sec_common_fn.lto.o
+  LTO [M] drivers/input/sec_input/sec_input_notifier.lto.o
+  LTO [M] drivers/input/sec_input/slsi/slsi_ts.lto.o
+  LTO [M] drivers/input/sec_input/wacom/wez01.lto.o
+  LTO [M] drivers/iommu/samsung-iommu-group.lto.o
+  LTO [M] drivers/iommu/samsung_iommu.lto.o
+  LTO [M] drivers/leds/leds-s2mpb02.lto.o
+  LTO [M] drivers/mcps/mcps.lto.o
+  LTO [M] drivers/media/common/videobuf2/videobuf2-dma-sg.lto.o
+  LTO [M] drivers/media/platform/exynos/camera-pp/camerapp.lto.o
+  LTO [M] drivers/media/platform/exynos/camera-pp/gdc/gdc.lto.o
+  LTO [M] drivers/media/platform/exynos/camera-pp/pd_mgr/camerapp-pd-mgr.lto.o
+  LTO [M] drivers/media/platform/exynos/camera-pp/votf/votf.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/fimc-is.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/sensor/module_framework/actuator/is-actuator-ak737x.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/sensor/module_framework/cis/is-cis-3j1.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/sensor/module_framework/cis/is-cis-gh1.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/sensor/module_framework/cis/is-cis-hm1.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/sensor/module_framework/cis/is-cis-hm3.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/sensor/module_framework/cis/is-cis-imx563.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/sensor/module_framework/flash/is-flash-s2mpb02.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/sensor/module_framework/laser_af/is-laser-af-vl53l5.lto.o
+  LTO [M] drivers/media/platform/exynos/camera/vendor/mcd/is-device-eeprom.lto.o
+  LTO [M] drivers/media/platform/exynos/mcfrc/mcfrc.lto.o
+  LTO [M] drivers/media/platform/exynos/mfc/exynos_mfc.lto.o
+  LTO [M] drivers/media/platform/exynos/repeater/repeater.lto.o
+  LTO [M] drivers/media/platform/exynos/scaler/scaler.lto.o
+  LTO [M] drivers/media/platform/exynos/smfc/smfc.lto.o
+  LTO [M] drivers/media/platform/exynos/tsmux/tsmux.lto.o
+  LTO [M] drivers/media/v4l2-core/v4l2-mem2mem.lto.o
+  LTO [M] drivers/mfd/maxim/mfd_max77705.lto.o
+  LTO [M] drivers/mfd/s2mpb02_mfd.lto.o
+  LTO [M] drivers/mfd/s2mps23_mfd.lto.o
+  LTO [M] drivers/mfd/s2mps24_mfd.lto.o
+  LTO [M] drivers/misc/drb/dev_ril_bridge.lto.o
+  LTO [M] drivers/misc/tui/tuihw-inf.lto.o
+  LTO [M] drivers/misc/tui/tuihw.lto.o
+  LTO [M] drivers/misc/tzdev/tzdev.lto.o
+  LTO [M] drivers/mmc/host/dw_mmc-exynos.lto.o
+  LTO [M] drivers/mmc/host/dw_mmc-pltfm.lto.o
+  LTO [M] drivers/mmc/host/dw_mmc.lto.o
+  LTO [M] drivers/muic/common/common_muic.lto.o
+  LTO [M] drivers/net/dropdump/dropdump.lto.o
+  LTO [M] drivers/net/usb/cdc_eem.lto.o
+  LTO [M] drivers/net/usb/cdc_ncm.lto.o
+  LTO [M] drivers/net/usb/net1080.lto.o
+  LTO [M] drivers/net/usb/rtl8150.lto.o
+  LTO [M] drivers/net/usb/smsc75xx.lto.o
+  LTO [M] drivers/net/usb/smsc95xx.lto.o
+  LTO [M] drivers/net/wireless/broadcom/bcmdhd_101_18/dhd.lto.o
+  LTO [M] drivers/nfc/nfc_sec.lto.o
+  LTO [M] drivers/nfc/snvm/snvm.lto.o
+  LTO [M] drivers/optics/tsl2510.lto.o
+  LTO [M] drivers/pci/controller/dwc/pcie-exynos-dbg.lto.o
+  LTO [M] drivers/pci/controller/dwc/pcie-exynos-host-v0.lto.o
+  LTO [M] drivers/pci/controller/dwc/pcie-exynos-rc.lto.o
+  LTO [M] drivers/pci/controller/dwc/pcie-exynos2100-rc-cal.lto.o
+  LTO [M] drivers/pci/controller/dwc/pcie-exynos2100-v0-cal.lto.o
+  LTO [M] drivers/phy/samsung/phy-exynos-mipi-dsim.lto.o
+  LTO [M] drivers/phy/samsung/phy-exynos-mipi.lto.o
+  LTO [M] drivers/phy/samsung/phy-exynos-usbdrd-super.lto.o
+  LTO [M] drivers/pinctrl/samsung/pinctrl-samsung-core.lto.o
+  LTO [M] drivers/power/reset/exynos-reboot.lto.o
+  LTO [M] drivers/pwm/pwm-samsung.lto.o
+  LTO [M] drivers/regulator/pmic_class/pmic_class.lto.o
+  LTO [M] drivers/regulator/s2dos05/s2dos05-regulator.lto.o
+  LTO [M] drivers/regulator/s2mpb02-regulator.lto.o
+  LTO [M] drivers/regulator/s2mpb03.lto.o
+  LTO [M] drivers/regulator/s2mps23-regulator.lto.o
+  LTO [M] drivers/regulator/s2mps24-regulator.lto.o
+  LTO [M] drivers/rtc/rtc-s2mps23.lto.o
+  LTO [M] drivers/rtc/rtc-s3c.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_extra_info.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_hardlockup_info.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_hist.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_hw_param.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_logbuf_interface.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_mode.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_reset_reason.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_sched_info.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_sched_report.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_softdog.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_stacktrace.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_summary.lto.o
+  LTO [M] drivers/samsung/debug/sec_debug_wdd_info.lto.o
+  LTO [M] drivers/samsung/misc/vbus_notifier.lto.o
+  LTO [M] drivers/samsung/pm/sec_pm_cpufreq.lto.o
+  LTO [M] drivers/samsung/pm/sec_pm_debug.lto.o
+  LTO [M] drivers/samsung/pm/sec_pm_log.lto.o
+  LTO [M] drivers/samsung/pm/sec_thermistor.lto.o
+  LTO [M] drivers/samsung/pm/sec_wakeup_cpu_allocator.lto.o
+  LTO [M] drivers/samsung/sec_argos.lto.o
+  LTO [M] drivers/samsung/sec_bootstat.lto.o
+  LTO [M] drivers/samsung/sec_class.lto.o
+  LTO [M] drivers/samsung/sec_crash_key.lto.o
+  LTO [M] drivers/samsung/sec_crash_key_user.lto.o
+  LTO [M] drivers/samsung/sec_hard_reset_hook.lto.o
+  LTO [M] drivers/samsung/sec_key_notifier.lto.o
+  LTO [M] drivers/samsung/sec_mparam.lto.o
+  LTO [M] drivers/samsung/sec_reboot.lto.o
+  LTO [M] drivers/scsi/scsi_srpmb.lto.o
+  LTO [M] drivers/scsi/ufs/ufs-exynos-core.lto.o
+  LTO [M] drivers/sensorhub/brcm/broadcom-sensorhub.lto.o
+  LTO [M] drivers/sensorhub/brcm/sensors_core.lto.o
+  LTO [M] drivers/sensors/sx9360.lto.o
+  LTO [M] drivers/sensors/vl53l5/vl53l5.lto.o
+  LTO [M] drivers/soc/samsung/acpm/exynos_acpm.lto.o
+  LTO [M] drivers/soc/samsung/acpm/plugin_dbg.lto.o
+  LTO [M] drivers/soc/samsung/cal-if/cmu_ewf.lto.o
+  LTO [M] drivers/soc/samsung/cal-if/cmupmucal.lto.o
+  LTO [M] drivers/soc/samsung/cpif/cpif.lto.o
+  LTO [M] drivers/soc/samsung/cpif/exynos_dit.lto.o
+  LTO [M] drivers/soc/samsung/cpif/mcu_ipc.lto.o
+  LTO [M] drivers/soc/samsung/cpif/modem_utils.lto.o
+  LTO [M] drivers/soc/samsung/cpif/shm_ipc.lto.o
+  LTO [M] drivers/soc/samsung/debug/debug-snapshot-qd.lto.o
+  LTO [M] drivers/soc/samsung/debug/debug-snapshot-sfrdump.lto.o
+  LTO [M] drivers/soc/samsung/debug/dss.lto.o
+  LTO [M] drivers/soc/samsung/debug/eat.lto.o
+  LTO [M] drivers/soc/samsung/debug/ehld.lto.o
+  LTO [M] drivers/soc/samsung/debug/exynos-adv-tracer-s2d.lto.o
+  LTO [M] drivers/soc/samsung/debug/exynos-debug-test.lto.o
+  LTO [M] drivers/soc/samsung/debug/exynos-ecc-handler.lto.o
+  LTO [M] drivers/soc/samsung/debug/exynos-ssld.lto.o
+  LTO [M] drivers/soc/samsung/debug/exynos2100-itmon.lto.o
+  LTO [M] drivers/soc/samsung/debug/hardlockup-debug.lto.o
+  LTO [M] drivers/soc/samsung/debug/hardlockup-watchdog.lto.o
+  LTO [M] drivers/soc/samsung/ect_parser.lto.o
+  LTO [M] drivers/soc/samsung/exynos-afm.lto.o
+  LTO [M] drivers/soc/samsung/exynos-bcm_dbg-dt.lto.o
+  LTO [M] drivers/soc/samsung/exynos-bcm_dbg.lto.o
+  LTO [M] drivers/soc/samsung/exynos-chipid_v2.lto.o
+  LTO [M] drivers/soc/samsung/exynos-cpu-profiler.lto.o
+  LTO [M] drivers/soc/samsung/exynos-cpuhp.lto.o
+  LTO [M] drivers/soc/samsung/exynos-cpupm.lto.o
+  LTO [M] drivers/soc/samsung/exynos-dm.lto.o
+  LTO [M] drivers/soc/samsung/exynos-el2.lto.o
+  LTO [M] drivers/soc/samsung/exynos-flexpmu-dbg.lto.o
+  LTO [M] drivers/soc/samsung/exynos-gpu-profiler.lto.o
+  LTO [M] drivers/soc/samsung/exynos-hdcp/hdcp2.lto.o
+  LTO [M] drivers/soc/samsung/exynos-idle-profiler.lto.o
+  LTO [M] drivers/soc/samsung/exynos-mcinfo.lto.o
+  LTO [M] drivers/soc/samsung/exynos-mif-profiler.lto.o
+  LTO [M] drivers/soc/samsung/exynos-migov.lto.o
+  LTO [M] drivers/soc/samsung/exynos-msn.lto.o
+  LTO [M] drivers/soc/samsung/exynos-pd-dbg.lto.o
+  LTO [M] drivers/soc/samsung/exynos-pd.lto.o
+  LTO [M] drivers/soc/samsung/exynos-pd_el3.lto.o
+  LTO [M] drivers/soc/samsung/exynos-pm-dvs.lto.o
+  LTO [M] drivers/soc/samsung/exynos-pm.lto.o
+  LTO [M] drivers/soc/samsung/exynos-pmu-if.lto.o
+  LTO [M] drivers/soc/samsung/exynos-ppmpu.lto.o
+  LTO [M] drivers/soc/samsung/exynos-s2mpu.lto.o
+  LTO [M] drivers/soc/samsung/exynos-sdm.lto.o
+  LTO [M] drivers/soc/samsung/exynos-seclog.lto.o
+  LTO [M] drivers/soc/samsung/exynos-seh.lto.o
+  LTO [M] drivers/soc/samsung/exynos-ssp.lto.o
+  LTO [M] drivers/soc/samsung/exynos-tzasc.lto.o
+  LTO [M] drivers/soc/samsung/exynos-ufcc.lto.o
+  LTO [M] drivers/soc/samsung/exynos_pm_qos.lto.o
+  LTO [M] drivers/soc/samsung/exynos_sci.lto.o
+  LTO [M] drivers/soc/samsung/imgloader.lto.o
+  LTO [M] drivers/soc/samsung/memlogger.lto.o
+  LTO [M] drivers/soc/samsung/secmem.lto.o
+  LTO [M] drivers/soc/samsung/sysevent.lto.o
+  LTO [M] drivers/soc/samsung/sysevent_notif.lto.o
+  LTO [M] drivers/soc/samsung/usi_v2.lto.o
+  LTO [M] drivers/soc/samsung/xperf/xperf.lto.o
+  LTO [M] drivers/spi/spi-s3c64xx.lto.o
+  LTO [M] drivers/spi/spidev.lto.o
+  LTO [M] drivers/spu_verify/spu_verify.lto.o
+  LTO [M] drivers/staging/android/ion/exynos/ion_exynos_mod.lto.o
+  LTO [M] drivers/staging/android/switch/switch_class.lto.o
+  LTO [M] drivers/sti/abc/abc.lto.o
+  LTO [M] drivers/sti/abc/abc_hub.lto.o
+  LTO [M] drivers/thermal/samsung/exynos_thermal.lto.o
+  LTO [M] drivers/thermal/samsung/gpu_cooling.lto.o
+  LTO [M] drivers/tty/serial/exynos_tty.lto.o
+  LTO [M] drivers/usb/class/cdc-acm.lto.o
+  LTO [M] drivers/usb/class/cdc-wdm.lto.o
+  LTO [M] drivers/usb/class/usblp.lto.o
+  LTO [M] drivers/usb/dwc3/dwc3-haps.lto.o
+  LTO [M] drivers/usb/dwc3/dwc3-of-simple.lto.o
+  LTO [M] drivers/usb/dwc3/dwc3-qcom.lto.o
+  LTO [M] drivers/usb/dwc3/dwc3.lto.o
+  LTO [M] drivers/usb/gadget/function/usb_f_conn_gadget.lto.o
+  LTO [M] drivers/usb/gadget/function/usb_f_dm.lto.o
+  LTO [M] drivers/usb/gadget/function/usb_f_dm1.lto.o
+  LTO [M] drivers/usb/gadget/function/usb_f_mtp_samsung.lto.o
+  LTO [M] drivers/usb/gadget/function/usb_f_ptp.lto.o
+  LTO [M] drivers/usb/gadget/function/usb_f_ss_mon_gadget.lto.o
+  LTO [M] drivers/usb/host/xhci-hcd.lto.o
+  LTO [M] drivers/usb/host/xhci-pci.lto.o
+  LTO [M] drivers/usb/host/xhci-plat-hcd.lto.o
+  LTO [M] drivers/usb/notify/usb_notifier.lto.o
+  LTO [M] drivers/usb/notify/usb_notify_layer.lto.o
+  LTO [M] drivers/usb/serial/ftdi_sio.lto.o
+  LTO [M] drivers/usb/serial/pl2303.lto.o
+  LTO [M] drivers/usb/serial/usbserial.lto.o
+  LTO [M] drivers/usb/typec/common/pdic_notifier_module.lto.o
+  LTO [M] drivers/usb/typec/manager/if_cb_manager.lto.o
+  LTO [M] drivers/usb/typec/manager/usb_typec_manager.lto.o
+  LTO [M] drivers/usb/typec/maxim/pdic_max77705.lto.o
+  LTO [M] drivers/uwb/uwb.lto.o
+  LTO [M] drivers/vibrator/common/sec_vibrator.lto.o
+  LTO [M] drivers/vibrator/cs40l2x/cs40l2x_vib.lto.o
+  LTO [M] drivers/video/fbdev/exynos/dp_logger/dp_ext_func.lto.o
+  LTO [M] drivers/video/fbdev/exynos/dpu30/dpu.lto.o
+  LTO [M] drivers/video/fbdev/exynos/panel/mcd-panel.lto.o
+  LTO [M] drivers/video/fbdev/exynos/panel/s6e3hab/mcd-panel-s6e3hab.lto.o
+  LTO [M] drivers/video/fbdev/exynos/panel/s6e3had/mcd-panel-s6e3had.lto.o
+  LTO [M] drivers/vision/dsp/dsp.lto.o
+  LTO [M] drivers/vision/npu.lto.o
+  LTO [M] drivers/watchdog/s3c2410_wdt.lto.o
+  LTO [M] drivers/watchdog/softdog.lto.o
+  LTO [M] sound/soc/codecs/snd-soc-cirrus-amp.lto.o
+  LTO [M] sound/soc/codecs/snd-soc-cs35l41-i2c.lto.o
+  LTO [M] sound/soc/codecs/snd-soc-wm-adsp.lto.o
+  LTO [M] sound/soc/samsung/abox/snd-soc-samsung-abox-gic.lto.o
+  LTO [M] sound/soc/samsung/abox/snd-soc-samsung-abox.lto.o
+  LTO [M] sound/soc/samsung/sec_audio_debug.lto.o
+  LTO [M] sound/soc/samsung/sec_audio_sysfs.lto.o
+  LTO [M] sound/soc/samsung/snd-soc-dp_dma.lto.o
+  LTO [M] sound/soc/samsung/snd-soc-s3c-dma.lto.o
+  LTO [M] sound/soc/samsung/unbound_prince.lto.o
+  LTO [M] sound/soc/samsung/vts/snd-soc-samsung-vts-mailbox.lto.o
+  LTO [M] sound/soc/samsung/vts/snd-soc-samsung-vts.lto.o
+  LTO [M] sound/usb/exynos-usb-audio-offloading.lto.o
+  Building modules, stage 2.
+  MODPOST 265 modules
+[*] Упаковываем образы в build/out/p3s...
+2964 blocks
+create image file: build/out/p3s/dtb.img...
+Total 1 entries.
+create image file: build/out/p3s/dtbo.img...
+Total 17 entries.
+===============================================
+Готово! Образы сохранены в build/out/p3s/
+===============================================

@@ -1,0 +1,28 @@
+!<thin>
+//                                              158       `
+gc.o/
+key.o/
+keyring.o/
+keyctl.o/
+permission.o/
+process_keys.o/
+request_key.o/
+request_key_auth.o/
+user_defined.o/
+compat.o/
+proc.o/
+sysctl.o/
+keyctl_pkey.o/
+/0              0           0     0     644     8856      `
+/6              0           0     0     644     24504     `
+/13             0           0     0     644     25144     `
+/24             0           0     0     644     24064     `
+/34             0           0     0     644     2480      `
+/48             0           0     0     644     13808     `
+/64             0           0     0     644     12664     `
+/79             0           0     0     644     5360      `
+/99             0           0     0     644     7760      `
+/115            0           0     0     644     3768      `
+/125            0           0     0     644     7160      `
+/133            0           0     0     644     2272      `
+/143            0           0     0     644     6048      `

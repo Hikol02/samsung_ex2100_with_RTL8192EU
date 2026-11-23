@@ -1,0 +1,1 @@
+cmd_drivers/battery/charger/max77705_charger/built-in.a := echo >/dev/null; rm -f drivers/battery/charger/max77705_charger/built-in.a; llvm-ar cDPrST drivers/battery/charger/max77705_charger/built-in.a 

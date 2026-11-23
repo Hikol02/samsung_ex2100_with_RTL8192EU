@@ -1,0 +1,3 @@
+arch/arm64/boot/dts/exynos/.exynos2100-smdk2100.dtbo.dts.tmp: \
+  arch/arm64/boot/dts/exynos/exynos2100-smdk2100.dts \
+  /usr/include/gentoo/fortify.h /usr/include/gentoo/maybe-stddefs.h
